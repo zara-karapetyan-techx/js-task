@@ -17,6 +17,29 @@ const contact = {
 console.log(`Hi, my name is ${firstName} ${lastName}. I live in ${contact.city}.`);
 console.log(`I am ${currentYear - birthYear} years old and currently ${isStudent ? "a student" : "not a student"}.`);
 
+// Using hobbies
+
+// Print hobbies
+let hobbyList = "";
+for (let i = 0; i < hobbies.length; i++) {
+    hobbyList += hobbies[i];
+    if (i < hobbies.length - 1) {
+        hobbyList += ", ";
+    }
+}
+console.log(`My hobbies include: ${hobbyList}.`);
+
+//Print one specific hobby
+console.log(`One of my favorite hobbies is ${hobbies[1]}.`);
+
+// Check for "reading" using for...of loop
+for (let hobby of hobbies) {
+    if (hobby === "reading") {
+        console.log("I enjoy reading psychological books.");
+        break;
+    }
+}
+
 
 // Type Coercion & Comparison
 
